@@ -1,0 +1,28 @@
+﻿@page
+@model EditPersonModel
+@{
+    ViewData["Title"] = "Edit Person";
+}
+<head>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<h2>Edit Person</h2>
+
+@if (Model.Message != null)
+{
+    <p style="color:green">@Model.Message</p>
+}
+
+<form method="post">
+    <input type="hidden" name="Id" value="@Model.Person.Id" />
+    <input name="FirstName" value="@Model.Person.FirstName" required /><br />
+    <input name="LastName" value="@Model.Person.LastName" required /><br />
+    <input name="Email" value="@Model.Person.Email" required /><br />
+    <input name="JobTitle" value="@Model.Person.JobTitle" required /><br />
+    <input name="Salary" value="@Model.Person.Salary" type="number" required /><br />
+    <input name="Department" value="@Model.Person.Department" required /><br />
+    <input name="Username" value="@Model.Person.Username" required /><br />
+    <button type="submit">Save</button>
+    <a href="/PeopleList" class="btn">Back</a>
+</form>

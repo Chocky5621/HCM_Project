@@ -1,0 +1,13 @@
+﻿
+bin/
+obj/
+
+.vs/
+*.user
+*.suo
+
+*.vsidx
+*.db
+*.log
+
+TestResults/

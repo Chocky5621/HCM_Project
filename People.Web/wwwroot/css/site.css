@@ -1,0 +1,94 @@
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+form.clean-form {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        max-width: none;
+        margin: 0;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.link-button:focus {
+        outline: none;
+        box-shadow: none;
+}
+
+.link-button:hover {
+        color: #0056b3;
+}
+.inline-form {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0b5ed7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

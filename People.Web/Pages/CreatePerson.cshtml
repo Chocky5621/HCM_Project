@@ -1,0 +1,35 @@
+﻿@page
+@model CreatePersonModel
+@{
+    ViewData["Title"] = "Add New Person";
+}
+
+<h2>Add New Person</h2>
+
+@if (Model.Message != null)
+{
+    <p style="color:green">@Model.Message</p>
+}
+
+<form method="post">
+    <input name="FirstName" placeholder="First Name" required /><br />
+    <input name="LastName" placeholder="Last Name" required /><br />
+    <input name="Email" placeholder="Email" required /><br />
+    <input name="JobTitle" placeholder="Job Title" required /><br />
+    <input name="Salary" placeholder="Salary" type="number" required /><br />
+    <input name="Department" placeholder="Department" required /><br />
+    <input name="Username" placeholder="Username" required /><br />
+    <select name="Role" asp-for="Role" required>
+        <option value="">Select Role</option>
+        <option value="Employee">Employee</option>
+        <option value="Manager">Manager</option>
+        <option value="HRAdmin">HRAdmin</option>
+    </select>
+        
+    <div style="margin-top: 20px;">
+
+        <button type="submit" class="clean-button">Create</button>
+        <a href="/PeopleList" class="btn">Back</a>
+    </div>
+
+</form>

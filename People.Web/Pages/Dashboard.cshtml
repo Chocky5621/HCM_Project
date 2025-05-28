@@ -1,0 +1,28 @@
+﻿@page
+@model DashboardModel
+<head>
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<h2>Dashboard</h2>
+
+@if (Model.Role == "HRAdmin")
+{
+    <p>Welcome, HR Admin!</p>
+    <a href="/PeopleList"> View People</a>
+    <br />
+    <a href="/CreatePerson"> Add Person</a>
+}
+else if (Model.Role == "Manager" || Model.Role == "Employee")
+{
+    <p>Welcome, @Model.Role!</p>
+    <a href="/PeopleList"> View People</a>
+}
+else
+{
+    <p>You do not have permission to access this page.</p>
+}
+<div style="margin-top: 20px;">
+    <form method="post" asp-page="/Logout" class="clean-form">
+        <button type="submit" class="clean-button">Logout</button>
+    </form>
+</div>

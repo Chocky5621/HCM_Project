@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+
+<h2>Login</h2>
+<form method="post">
+    <input name="Username" placeholder="Username" />
+    <br />
+    <input name="Password" type="password" placeholder="Password" />
+    <br />
+    <button type="submit">Login</button>
+</form>
+
+@if (ViewData["Error"] != null)
+{
+    <p style="color:red">@ViewData["Error"]</p>
+}
